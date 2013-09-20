@@ -1,0 +1,19 @@
+{
+    "name": "hkdobrev/csp",
+    "description": "Content-Security-Policy header generator",
+    "homepage": "https://github.com/hkdobrev/csp-php",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Haralan Dobrev",
+            "email": "hkdobrev@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+
+    },
+    "require-dev": {
+        "phpunit/phpunit": "3.7.*"
+    }
+}
