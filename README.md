@@ -1,4 +1,4 @@
 csp-php
 =======
 
-Content-Security-Policy header generation
+Content-Security-Policy header generatator
