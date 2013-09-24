@@ -2,7 +2,7 @@
 
 namespace CSP\Source;
 
-class NonceSource extends Source {
+class NonceSource implements Sourceable {
 
 	const NONCE_PREFIX = "'nonce-";
 

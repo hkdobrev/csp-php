@@ -2,7 +2,7 @@
 
 namespace CSP\Source;
 
-class KeywordSource extends Source {
+class KeywordSource implements Sourceable {
 
 	const KEYWORD_SELF = "'self'";
 

@@ -2,7 +2,7 @@
 
 namespace CSP\Source;
 
-class SchemeSource extends Source {
+class SchemeSource implements Sourceable {
 
 	const SCHEME_SUFFIX = ':';
 

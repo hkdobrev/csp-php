@@ -2,7 +2,6 @@
 
 namespace CSP\Source;
 
-interface Sourceable {
+use CSP\Renderable;
 
-	public function render();
-}
+interface Sourceable extends Renderable {}

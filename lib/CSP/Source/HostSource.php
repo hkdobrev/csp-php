@@ -2,7 +2,7 @@
 
 namespace CSP\Source;
 
-class HostSource extends Source {
+class HostSource implements Sourceable {
 
 	protected $_host;
 
