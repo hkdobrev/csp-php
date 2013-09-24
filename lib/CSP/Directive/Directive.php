@@ -2,22 +2,15 @@
 
 namespace CSP\Directive;
 
-abstract class Directive {
+abstract class Directive implements DirectiveInterface {
 
-	protected $_name;
+	const NAME_VALUE_DELIMITER = ' ';
 
 	protected $_value;
 
 	public function getName()
 	{
-		return $this->_name;
-	}
-
-	public function setName($name)
-	{
-		$this->_name = $name;
-
-		return $this;
+		return static::NAME;
 	}
 
 	public function getValue()
@@ -31,4 +24,11 @@ abstract class Directive {
 
 		return $this;
 	}
+
+	public function render()
+	{
+		return $this->getName().self::NAME_VALUE_DELIMITER.$this->renderValue();
+	}
+
+	abstract public function renderValue();
 }
