@@ -2,9 +2,9 @@
 
 namespace CSP\Source;
 
-use ArrayObject;
+use CSP\Util\RenderableList;
 
-class SourceList extends ArrayObject {
+class SourceList extends RenderableList {
 
 	const SOURCE_KEYWORD = 'KeywordSource';
 
@@ -13,9 +13,4 @@ class SourceList extends ArrayObject {
 	const SOURCE_NONCE = 'NonceSource';
 
 	const SOURCE_SCHEME = 'SchemeSource';
-
-	public function __construct($input = array(), $flags = ArrayObject::ARRAY_AS_PROPS, $iterator_class = "ArrayIterator")
-	{
-		parent::__construct($input, $flags, $iterator_class);
-	}
 }
