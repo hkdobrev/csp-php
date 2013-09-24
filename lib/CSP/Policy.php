@@ -31,4 +31,9 @@ class Policy implements PolicyInterface {
 
 		return $this;
 	}
+
+	public function render()
+	{
+		return $this->getDirectives()->render();
+	}
 }

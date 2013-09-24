@@ -4,7 +4,7 @@ namespace CSP;
 
 use CSP\Directive\DirectiveList;
 
-interface PolicyInterface {
+interface PolicyInterface extends Renderable {
 
 	public function __construct(DirectiveList $directives = NULL);
 
