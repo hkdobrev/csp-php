@@ -2,7 +2,7 @@
 
 namespace CSP\Directive;
 
-use CSP\Sandbox\Token;
+use CSP\Sandbox\TokenList;
 
 /**
  * Rules for sandboxing iframes
@@ -11,10 +11,13 @@ class SandboxDirective extends Directive {
 
 	const NAME = 'sandbox';
 
-	protected $_name = self::NAME;
-
-	public function setValue(Token $token)
+	public function setValue(TokenList $tokens)
 	{
-		return parent::setValue($token);
+		return parent::setValue($tokens);
+	}
+
+	public function renderValue()
+	{
+		return $this->getValue()->render();
 	}
 }
