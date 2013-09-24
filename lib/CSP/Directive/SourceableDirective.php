@@ -2,4 +2,4 @@
 
 namespace CSP\Directive;
 
-interface SourceableDirective {}
+interface SourceableDirective extends DirectiveInterface {}
