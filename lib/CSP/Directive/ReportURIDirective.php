@@ -11,10 +11,13 @@ class ReportURIDirective extends Directive {
 
 	const NAME = 'report-uri';
 
-	protected $_name = self::NAME;
-
 	public function setValue(URI $uri)
 	{
 		return parent::setValue($uri);
+	}
+
+	public function renderValue()
+	{
+		return $this->getValue()->render();
 	}
 }
