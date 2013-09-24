@@ -2,9 +2,9 @@
 
 namespace CSP\Directive;
 
-use ArrayObject;
+use CSP\Util\RenderableList;
 
-/**
- *
- */
-class DirectiveList extends ArrayObject {}
+class DirectiveList extends RenderableList {
+
+	const ITEM_DELIMITER = ';';
+}
