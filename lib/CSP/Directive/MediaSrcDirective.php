@@ -14,6 +14,4 @@ use CSP\Source\SourceList;
 class MediaSrcDirective extends SrcDirective {
 
 	const NAME = 'media-src';
-
-	protected $_name = self::NAME;
 }

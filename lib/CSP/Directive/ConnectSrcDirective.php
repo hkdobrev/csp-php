@@ -13,6 +13,4 @@ use CSP\Source\SourceList;
 class ConnectSrcDirective extends SrcDirective {
 
 	const NAME = 'connect-src';
-
-	protected $_name = self::NAME;
 }

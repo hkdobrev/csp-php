@@ -16,4 +16,9 @@ abstract class SrcDirective extends Directive implements SourceableDirective {
 	{
 		return parent::setValue($sourceList);
 	}
+
+	public function renderValue()
+	{
+		return $this->getValue()->render();
+	}
 }

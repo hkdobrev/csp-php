@@ -8,6 +8,4 @@ namespace CSP\Directive;
 class DefaultSrcDirective extends SrcDirective {
 
 	const NAME = 'default-src';
-
-	protected $_name = self::NAME;
 }

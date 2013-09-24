@@ -10,6 +10,4 @@ namespace CSP\Directive;
 class FrameSrcDirective extends SrcDirective {
 
 	const NAME = 'frame-src';
-
-	protected $_name = self::NAME;
 }

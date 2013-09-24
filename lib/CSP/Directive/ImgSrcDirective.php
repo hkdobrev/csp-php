@@ -12,6 +12,4 @@ use CSP\Source\SourceList;
 class ImgSrcDirective extends SrcDirective {
 
 	const NAME = 'img-src';
-
-	protected $_name = self::NAME;
 }

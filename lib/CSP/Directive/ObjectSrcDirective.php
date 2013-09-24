@@ -13,6 +13,4 @@ use CSP\Source\SourceList;
 class ObjectSrcDirective extends SrcDirective {
 
 	const NAME = 'object-src';
-
-	protected $_name = self::NAME;
 }

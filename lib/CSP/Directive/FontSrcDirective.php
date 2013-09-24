@@ -9,6 +9,4 @@ namespace CSP\Directive;
 class FontSrcDirective extends SrcDirective {
 
 	const NAME = 'font-src';
-
-	protected $_name = self::NAME;
 }

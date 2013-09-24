@@ -12,6 +12,4 @@ use CSP\Source\SourceList;
 class StyleSrcDirective extends SrcDirective {
 
 	const NAME = 'style-src';
-
-	protected $_name = self::NAME;
 }
