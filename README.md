@@ -6,15 +6,32 @@
 
 ---
 
+#### What is CSP?
+
 Content Security Policy is a specification developed by W3C and more specificially Web Application Security Working Group.
 
-It aims to make cross-site scripting (XSS), content injection and other attacks quite difficult.
+Its goal is to make cross-site scripting (XSS), content injection and other attacks quite difficult.
 It considerably improve the security of web applications with limiting what the browser would load and execute.
 
 It is a mechanism which allows the server to send to the visitor's browser a set of strict rules to follow.
 
 You could whitelist script, image and iframe sources (and many other) which you would want to allow on your site.
 Everything else which might be injected as an iframe, an inline script or an external resource would not be loaded and executed by the browser at all.
+
+---
+
+#### What is this repo about?
+
+This library aims to ease the use of the different variations of rules and directives in the Content Security Policy (CSP).
+It could potentially introduce web developers to the specification and broaden the use of CSP across PHP projects (a significant part of the web).
+
+And thus to increase the secuirty of the web as a whole.
+
+---
+
+#### Roadmap
+
+See [TODO.md](TODO.md)
 
 ---
 
