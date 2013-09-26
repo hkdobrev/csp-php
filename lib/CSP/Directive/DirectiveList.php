@@ -6,5 +6,5 @@ use CSP\Util\RenderableList;
 
 class DirectiveList extends RenderableList {
 
-	const ITEM_DELIMITER = ';';
+	const ITEM_DELIMITER = '; ';
 }
