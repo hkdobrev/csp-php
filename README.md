@@ -22,4 +22,6 @@ For more on Content Security Policy see: http://www.html5rocks.com/en/tutorials/
 
 Here is a video introduction: https://mikewest.org/2013/09/frontend-security-frontendconf-2013
 
-And the spec: [CSP 1.0 (Candidate Recomendation)](www.w3.org/TR/CSP) [CSP 1.1 (Working Draft)](www.w3.org/TR/CSP11)
+And the different versions of the specification:
+- [CSP 1.0 (Candidate Recomendation)](www.w3.org/TR/CSP)
+- [CSP 1.1 (Working Draft)](www.w3.org/TR/CSP11)
