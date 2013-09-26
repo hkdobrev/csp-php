@@ -2,8 +2,8 @@ Simple to-do list:
 
  - [ ] Header generation
  - [ ] Setters for directives
- - [ ] Prefixed headers
- - [ ] Report-Only headers
+ - [X] Prefixed headers
+ - [X] Report-Only headers
  - [ ] Parsing of CSP headers
  - [ ] Built-in common cases: Think analytics, social sharing buttons with iframes
  - [ ] Validating the sources values being set
