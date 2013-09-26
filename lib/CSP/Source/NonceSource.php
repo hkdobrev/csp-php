@@ -10,6 +10,12 @@ class NonceSource implements Sourceable {
 
 	protected $_nonce;
 
+
+	public function __construct($nonce)
+	{
+		$this->_nonce = $nonce;
+	}
+
 	public function getNonce()
 	{
 		return $this->_nonce;

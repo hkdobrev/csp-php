@@ -8,6 +8,11 @@ class SchemeSource implements Sourceable {
 
 	protected $_scheme;
 
+	public function __construct($scheme)
+	{
+		$this->_scheme = $scheme;
+	}
+
 	public function getScheme()
 	{
 		return $this->_scheme;

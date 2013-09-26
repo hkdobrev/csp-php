@@ -12,6 +12,11 @@ class KeywordSource implements Sourceable {
 
 	protected $_keyword;
 
+	public function __construct($keyword)
+	{
+		$this->_keyword = $keyword;
+	}
+
 	public function getKeyword()
 	{
 		return $this->_keyword;
