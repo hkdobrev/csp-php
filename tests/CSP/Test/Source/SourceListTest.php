@@ -7,10 +7,9 @@ use CSP\Source\SourceList;
 
 class SourceListTest extends TestCase {
 
-	public function testArrayObjectInstance()
+	public function testRenderableList()
 	{
-		$sourceList = new SourceList;
-		$this->assertInstanceOf('ArrayObject', $sourceList);
+		$this->assertInstanceOf('CSP\Util\RenderableList', new SourceList);
 	}
 
 }
