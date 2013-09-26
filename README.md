@@ -13,7 +13,7 @@ It considerably improve the security of web applications with limiting what the 
 
 It is a mechanism which allows the server to send to the visitor's browser a set of strict rules to follow.
 
-You could whitelist script, image iframe, sources (and many other) which you would want to allow on your site.
+You could whitelist script, image and iframe sources (and many other) which you would want to allow on your site.
 Everything else which might be injected as an iframe, an inline script or an external resource would not be loaded and executed by the browser at all.
 
 ---
