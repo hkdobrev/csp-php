@@ -8,6 +8,14 @@ abstract class Directive implements DirectiveInterface {
 
 	protected $_value;
 
+	public function __construct($value = NULL)
+	{
+		if ($value !== NULL)
+		{
+			$this->setValue($value);
+		}
+	}
+
 	public function getName()
 	{
 		return static::NAME;
@@ -20,7 +28,7 @@ abstract class Directive implements DirectiveInterface {
 
 	public function setValue($value)
 	{
-		$this->value = $value;
+		$this->_value = $value;
 
 		return $this;
 	}
