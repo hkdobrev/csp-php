@@ -7,6 +7,9 @@ use CSP\Source\KeywordSource;
 
 class KeywordSourceTest extends TestCase {
 
+	/**
+	 * @coversNothing
+	 */
 	public function testSourceable()
 	{
 		$this->assertInstanceOf('CSP\Source\Sourceable', new KeywordSource('abc'));

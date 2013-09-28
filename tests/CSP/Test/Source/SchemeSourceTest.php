@@ -7,6 +7,9 @@ use CSP\Source\SchemeSource;
 
 class SchemeSourceTest extends TestCase {
 
+	/**
+	 * @coversNothing
+	 */
 	public function testSourceable()
 	{
 		$this->assertInstanceOf('CSP\Source\Sourceable', new SchemeSource('abc'));

@@ -7,6 +7,9 @@ use CSP\Source\NonceSource;
 
 class NonceSourceTest extends TestCase {
 
+	/**
+	 * @coversNothing
+	 */
 	public function testSourceable()
 	{
 		$this->assertInstanceOf('CSP\Source\Sourceable', new NonceSource('abc'));
