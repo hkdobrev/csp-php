@@ -9,11 +9,17 @@ use CSP\Test\Util\RenderableListWithComma;
 
 class RenderableListTest extends TestCase {
 
+	/**
+	 * @coversNothing
+	 */
 	public function testArrayObjectInstance()
 	{
 		$this->assertInstanceOf('ArrayObject', new RenderableList);
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testRenderable()
 	{
 		$this->assertInstanceOf('CSP\Renderable', new RenderableList);
@@ -47,6 +53,9 @@ class RenderableListTest extends TestCase {
 		$this->assertEquals('', $renderableList->render());
 	}
 
+	/**
+	 * @covers CSP\Util\RenderableList::render
+	 */
 	public function testStaticItemDelimiterConstant()
 	{
 		$renderableList = new RenderableListWithComma(array(

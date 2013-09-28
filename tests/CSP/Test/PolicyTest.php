@@ -7,11 +7,17 @@ use CSP\Directive\DirectiveList;
 
 class PolicyTest extends TestCase {
 
+	/**
+	 * @coversNothing
+	 */
 	public function testRenderable()
 	{
 		$this->assertInstanceOf('CSP\Renderable', new Policy);
 	}
 
+	/**
+	 * @coversNothing
+	 */
 	public function testPolicynterface()
 	{
 		$this->assertInstanceOf('CSP\PolicyInterface', new Policy);

@@ -7,6 +7,9 @@ use CSP\Source\HostSource;
 
 class HostSourceTest extends TestCase {
 
+	/**
+	 * @coversNothing
+	 */
 	public function testSourceable()
 	{
 		$this->assertInstanceOf('CSP\Source\Sourceable', new HostSource('abc'));
