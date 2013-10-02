@@ -42,3 +42,7 @@ Here is a video introduction: https://mikewest.org/2013/09/frontend-security-fro
 And the different versions of the specification:
 - [CSP 1.0 (Candidate Recomendation)](www.w3.org/TR/CSP)
 - [CSP 1.1 (Working Draft)](www.w3.org/TR/CSP11)
+
+
+[![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hkdobrev/csp-php/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
+
