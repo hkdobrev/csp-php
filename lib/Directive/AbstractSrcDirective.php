@@ -12,8 +12,9 @@ abstract class AbstractSrcDirective extends AbstractDirective implements Sourcea
 
     public function setValue($sourceList)
     {
-        if ( ! $sourceList instanceof SourceList)
+        if (! $sourceList instanceof SourceList) {
             throw new \InvalidArgumentException('SrcDirective value must be an instance of SourceList');
+        }
 
         return parent::setValue($sourceList);
     }

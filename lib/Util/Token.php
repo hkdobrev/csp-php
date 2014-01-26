@@ -8,8 +8,7 @@ class Token implements RenderableInterface
 
     public function __construct($value = null)
     {
-        if ($value !== null)
-        {
+        if ($value !== null) {
             $this->value = $value;
         }
     }

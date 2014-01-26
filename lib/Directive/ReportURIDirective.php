@@ -11,8 +11,9 @@ class ReportURIDirective extends AbstractDirective
 
     public function setValue($uri)
     {
-        if ( ! $uri instanceof URI)
+        if (! $uri instanceof URI) {
             throw new \InvalidArgumentException('ReportURIDirective value must be an instance of URI');
+        }
 
         return parent::setValue($uri);
     }

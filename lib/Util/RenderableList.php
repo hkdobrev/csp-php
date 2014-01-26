@@ -11,8 +11,7 @@ class RenderableList extends ArrayObject implements RenderableInterface
     {
         return implode(
             static::ITEM_DELIMITER,
-            array_filter(array_map(function($item)
-            {
+            array_filter(array_map(function ($item) {
                 return $item->render();
             }, $this->getArrayCopy()))
         );

@@ -27,8 +27,11 @@ class ContentSecurityPolicyHeader implements HeaderInterface
 
     public function setValue($value)
     {
-        if ( ! $value instanceof PolicyInterface)
-            throw new \InvalidArgumentException('ContentSecurityPolicyHeader value must be an instance of PolicyInterface');
+        if (! $value instanceof PolicyInterface) {
+            throw new \InvalidArgumentException(
+                'ContentSecurityPolicyHeader value must be an instance of PolicyInterface'
+            );
+        }
 
         $this->value = $value;
 

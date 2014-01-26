@@ -11,8 +11,9 @@ class SandboxDirective extends AbstractDirective
 
     public function setValue($tokens)
     {
-        if ( ! $tokens instanceof TokenList)
+        if (! $tokens instanceof TokenList) {
             throw new \InvalidArgumentException('SandboxDirective value must be an instance of TokenList');
+        }
 
         return parent::setValue($tokens);
     }
