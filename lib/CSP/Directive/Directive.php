@@ -4,7 +4,7 @@ abstract class Directive implements DirectiveInterface {
 
 	const NAME_VALUE_DELIMITER = ' ';
 
-	protected $_value;
+	protected $value;
 
 	public function __construct($value = NULL)
 	{
@@ -21,12 +21,12 @@ abstract class Directive implements DirectiveInterface {
 
 	public function getValue()
 	{
-		return $this->_value;
+		return $this->value;
 	}
 
 	public function setValue($value)
 	{
-		$this->_value = $value;
+		$this->value = $value;
 
 		return $this;
 	}

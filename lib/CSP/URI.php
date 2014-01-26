@@ -2,11 +2,11 @@
 
 class URI implements Renderable {
 
-	protected $_uri;
+	protected $uri;
 
 	public function __construct($uri)
 	{
-		$this->_uri = $uri;
+		$this->uri = $uri;
 		$this->check();
 	}
 
@@ -17,6 +17,6 @@ class URI implements Renderable {
 
 	public function render()
 	{
-		return $this->_uri;
+		return $this->uri;
 	}
 }

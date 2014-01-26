@@ -6,7 +6,7 @@ class ContentSecurityPolicyHeader implements Header {
 
 	const NAME = 'Content-Security-Policy';
 
-	protected $_value;
+	protected $value;
 
 	public function __construct($value = NULL)
 	{
@@ -23,7 +23,7 @@ class ContentSecurityPolicyHeader implements Header {
 
 	public function getValue()
 	{
-		return $this->_value;
+		return $this->value;
 	}
 
 	public function setValue($value)
@@ -31,7 +31,7 @@ class ContentSecurityPolicyHeader implements Header {
 		if ( ! $value instanceof PolicyInterface)
 			throw new \InvalidArgumentException('ContentSecurityPolicyHeader value must be an instance of PolicyInterface');
 
-		$this->_value = $value;
+		$this->value = $value;
 
 		return $this;
 	}

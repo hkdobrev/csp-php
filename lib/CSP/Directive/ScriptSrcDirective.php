@@ -13,7 +13,7 @@ class ScriptSrcDirective extends SrcDirective {
 
 	const NAME = 'script-src';
 
-	protected $_allowed_sources = array(
+	protected $allowed_sources = array(
 		SourceList::SOURCE_HOST,
 		SourceList::SOURCE_KEYWORD,
 		SourceList::SOURCE_SCHEME,

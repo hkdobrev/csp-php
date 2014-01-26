@@ -4,24 +4,24 @@ use CSP\Renderable;
 
 class Token implements Renderable {
 
-	protected $_value;
+	protected $value;
 
 	public function __construct($value = NULL)
 	{
 		if ($value !== NULL)
 		{
-			$this->_value = $value;
+			$this->value = $value;
 		}
 	}
 
 	public function getValue()
 	{
-		return $this->_value;
+		return $this->value;
 	}
 
 	public function setValue($value)
 	{
-		$this->_value = $value;
+		$this->value = $value;
 
 		return $this;
 	}

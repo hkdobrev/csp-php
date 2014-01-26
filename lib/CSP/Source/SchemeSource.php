@@ -4,16 +4,16 @@ class SchemeSource implements Sourceable {
 
 	const SCHEME_SUFFIX = ':';
 
-	protected $_scheme;
+	protected $scheme;
 
 	public function __construct($scheme)
 	{
-		$this->_scheme = $scheme;
+		$this->scheme = $scheme;
 	}
 
 	public function getScheme()
 	{
-		return $this->_scheme;
+		return $this->scheme;
 	}
 
 	public function render()

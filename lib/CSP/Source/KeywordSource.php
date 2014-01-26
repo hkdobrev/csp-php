@@ -8,20 +8,20 @@ class KeywordSource implements Sourceable {
 
 	const KEYWORD_UNSAFE_EVAL = "'unsafe-eval'";
 
-	protected $_keyword;
+	protected $keyword;
 
 	public function __construct($keyword)
 	{
-		$this->_keyword = $keyword;
+		$this->keyword = $keyword;
 	}
 
 	public function getKeyword()
 	{
-		return $this->_keyword;
+		return $this->keyword;
 	}
 
 	public function render()
 	{
-		return $this->_keyword;
+		return $this->keyword;
 	}
 }

@@ -8,7 +8,7 @@ class Policy implements PolicyInterface {
 	 * List of directives
 	 * @var CSP\Directive\DirectiveList
 	 */
-	protected $_directives;
+	protected $directives;
 
 	public function __construct(DirectiveList $directives = NULL)
 	{
@@ -20,12 +20,12 @@ class Policy implements PolicyInterface {
 
 	public function getDirectives()
 	{
-		return $this->_directives;
+		return $this->directives;
 	}
 
 	public function setDirectives(DirectiveList $directives)
 	{
-		$this->_directives = $directives;
+		$this->directives = $directives;
 
 		return $this;
 	}

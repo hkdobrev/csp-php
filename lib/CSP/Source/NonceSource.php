@@ -6,17 +6,17 @@ class NonceSource implements Sourceable {
 
 	const NONCE_SUFFIX = "'";
 
-	protected $_nonce;
+	protected $nonce;
 
 
 	public function __construct($nonce)
 	{
-		$this->_nonce = $nonce;
+		$this->nonce = $nonce;
 	}
 
 	public function getNonce()
 	{
-		return $this->_nonce;
+		return $this->nonce;
 	}
 
 	public function render()
