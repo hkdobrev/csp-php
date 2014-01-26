@@ -11,5 +11,5 @@ use CSP\Source\SourceList;
  */
 class MediaSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'media-src';
+    const NAME = 'media-src';
 }

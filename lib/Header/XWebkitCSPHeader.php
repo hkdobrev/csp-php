@@ -2,5 +2,5 @@
 
 class XWebkitCSPHeader extends ContentSecurityPolicyHeader
 {
-	const NAME = 'X-Webkit-CSP';
+    const NAME = 'X-Webkit-CSP';
 }

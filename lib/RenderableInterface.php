@@ -5,9 +5,9 @@
  */
 interface RenderableInterface {
 
-	/**
-	 * Get the string representation
-	 * @return string
-	 */
-	public function render();
+    /**
+     * Get the string representation
+     * @return string
+     */
+    public function render();
 }

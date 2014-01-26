@@ -9,5 +9,5 @@ use CSP\Source\SourceList;
  */
 class ImgSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'img-src';
+    const NAME = 'img-src';
 }

@@ -9,5 +9,5 @@ use CSP\Source\SourceList;
  */
 class StyleSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'style-src';
+    const NAME = 'style-src';
 }

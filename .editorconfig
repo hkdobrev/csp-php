@@ -5,8 +5,10 @@ root = true
 
 # Defaults for every file
 [*]
-# Indent with tabs
-indent_style = tab
+# Indent with spaces
+indent_style = spaces
+# Use 4 spaces
+indent_size = 4
 # Unix-style new lines
 end_of_line = lf
 # UTF-8 FTW!!!

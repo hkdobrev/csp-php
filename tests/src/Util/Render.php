@@ -4,15 +4,15 @@ use CSP\RenderableInterface;
 
 class Render implements RenderableInterface
 {
-	protected $value;
+    protected $value;
 
-	public function __construct($value)
-	{
-		$this->value = $value;
-	}
+    public function __construct($value)
+    {
+        $this->value = $value;
+    }
 
-	public function render()
-	{
-		return $this->value;
-	}
+    public function render()
+    {
+        return $this->value;
+    }
 }

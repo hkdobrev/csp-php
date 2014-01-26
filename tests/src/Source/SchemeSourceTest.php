@@ -5,33 +5,33 @@ use CSP\Source\SchemeSource;
 
 class SchemeSourceTest extends TestCase
 {
-	/**
-	 * @coversNothing
-	 */
-	public function testSourceable()
-	{
-		$this->assertInstanceOf(
-			'CSP\Source\SourceableInterface',
-			new SchemeSource('abc')
-		);
-	}
+    /**
+     * @coversNothing
+     */
+    public function testSourceable()
+    {
+        $this->assertInstanceOf(
+            'CSP\Source\SourceableInterface',
+            new SchemeSource('abc')
+        );
+    }
 
-	/**
-	 * @covers CSP\Source\SchemeSource::__construct
-	 * @covers CSP\Source\SchemeSource::getScheme
-	 */
-	public function testConstructAndGetScheme()
-	{
-		$schemeSource = new SchemeSource('abc');
-		$this->assertSame('abc', $schemeSource->getScheme());
-	}
+    /**
+     * @covers CSP\Source\SchemeSource::__construct
+     * @covers CSP\Source\SchemeSource::getScheme
+     */
+    public function testConstructAndGetScheme()
+    {
+        $schemeSource = new SchemeSource('abc');
+        $this->assertSame('abc', $schemeSource->getScheme());
+    }
 
-	/**
-	 * @covers CSP\Source\SchemeSource::render()
-	 */
-	public function testRender()
-	{
-		$schemeSource = new SchemeSource('abc');
-		$this->assertSame('abc:', $schemeSource->render());
-	}
+    /**
+     * @covers CSP\Source\SchemeSource::render()
+     */
+    public function testRender()
+    {
+        $schemeSource = new SchemeSource('abc');
+        $this->assertSame('abc:', $schemeSource->render());
+    }
 }

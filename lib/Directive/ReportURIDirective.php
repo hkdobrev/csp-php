@@ -7,18 +7,18 @@ use CSP\URI;
  */
 class ReportURIDirective extends AbstractDirective
 {
-	const NAME = 'report-uri';
+    const NAME = 'report-uri';
 
-	public function setValue($uri)
-	{
-		if ( ! $uri instanceof URI)
-			throw new \InvalidArgumentException('ReportURIDirective value must be an instance of URI');
+    public function setValue($uri)
+    {
+        if ( ! $uri instanceof URI)
+            throw new \InvalidArgumentException('ReportURIDirective value must be an instance of URI');
 
-		return parent::setValue($uri);
-	}
+        return parent::setValue($uri);
+    }
 
-	public function renderValue()
-	{
-		return $this->getValue()->render();
-	}
+    public function renderValue()
+    {
+        return $this->getValue()->render();
+    }
 }

@@ -5,11 +5,11 @@ use CSP\Source\SourceList;
 
 class SourceListTest extends TestCase
 {
-	/**
-	 * @coversNothing
-	 */
-	public function testRenderableList()
-	{
-		$this->assertInstanceOf('CSP\Util\RenderableList', new SourceList);
-	}
+    /**
+     * @coversNothing
+     */
+    public function testRenderableList()
+    {
+        $this->assertInstanceOf('CSP\Util\RenderableList', new SourceList);
+    }
 }

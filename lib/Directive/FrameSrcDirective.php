@@ -7,5 +7,5 @@
  */
 class FrameSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'frame-src';
+    const NAME = 'frame-src';
 }

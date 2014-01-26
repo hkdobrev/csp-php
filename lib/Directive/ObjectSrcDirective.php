@@ -10,5 +10,5 @@ use CSP\Source\SourceList;
  */
 class ObjectSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'object-src';
+    const NAME = 'object-src';
 }

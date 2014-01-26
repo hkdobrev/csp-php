@@ -4,5 +4,5 @@ use CSP\Util\RenderableList;
 
 class RenderableListWithComma extends RenderableList
 {
-	const ITEM_DELIMITER = ',';
+    const ITEM_DELIMITER = ',';
 }

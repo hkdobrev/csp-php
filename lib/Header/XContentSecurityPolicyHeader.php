@@ -2,5 +2,5 @@
 
 class XContentSecurityPolicyHeader extends ContentSecurityPolicyHeader
 {
-	const NAME = 'X-Content-Security-Policy';
+    const NAME = 'X-Content-Security-Policy';
 }

@@ -4,10 +4,10 @@ use CSP\Directive\AbstractDirective;
 
 class ActualDirective extends AbstractDirective
 {
-	const NAME = 'test-directive';
+    const NAME = 'test-directive';
 
-	public function renderValue()
-	{
-		return 'test-value';
-	}
+    public function renderValue()
+    {
+        return 'test-value';
+    }
 }

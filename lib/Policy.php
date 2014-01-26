@@ -4,33 +4,33 @@ use CSP\Directive\DirectiveList;
 
 class Policy implements PolicyInterface
 {
-	/**
-	 * List of directives
-	 * @var CSP\Directive\DirectiveList
-	 */
-	protected $directives;
+    /**
+     * List of directives
+     * @var CSP\Directive\DirectiveList
+     */
+    protected $directives;
 
-	public function __construct(DirectiveList $directives = NULL)
-	{
-		if ($directives) {
-			$this->setDirectives($directives);
-		}
-	}
+    public function __construct(DirectiveList $directives = NULL)
+    {
+        if ($directives) {
+            $this->setDirectives($directives);
+        }
+    }
 
-	public function getDirectives()
-	{
-		return $this->directives;
-	}
+    public function getDirectives()
+    {
+        return $this->directives;
+    }
 
-	public function setDirectives(DirectiveList $directives)
-	{
-		$this->directives = $directives;
+    public function setDirectives(DirectiveList $directives)
+    {
+        $this->directives = $directives;
 
-		return $this;
-	}
+        return $this;
+    }
 
-	public function render()
-	{
-		return $this->getDirectives()->render();
-	}
+    public function render()
+    {
+        return $this->getDirectives()->render();
+    }
 }

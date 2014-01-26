@@ -10,5 +10,5 @@ use CSP\Source\SourceList;
  */
 class ConnectSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'connect-src';
+    const NAME = 'connect-src';
 }

@@ -2,15 +2,15 @@
 
 interface HeaderInterface {
 
-	public function __construct($value = NULL);
+    public function __construct($value = NULL);
 
-	/**
-	 * Get the name of the header (the part before the colon)
-	 * @return string
-	 */
-	public function getName();
+    /**
+     * Get the name of the header (the part before the colon)
+     * @return string
+     */
+    public function getName();
 
-	public function getValue();
+    public function getValue();
 
-	public function setValue($value);
+    public function setValue($value);
 }

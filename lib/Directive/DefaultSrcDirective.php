@@ -5,5 +5,5 @@
  */
 class DefaultSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'default-src';
+    const NAME = 'default-src';
 }

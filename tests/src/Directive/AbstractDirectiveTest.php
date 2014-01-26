@@ -5,84 +5,84 @@ use CSP\Test\Directive\ActualDirective;
 
 class AbstractDirectiveTest extends TestCase
 {
-	/**
-	 * @coversNothing
-	 */
-	public function testDirectiveInterface()
-	{
-		$this->assertInstanceOf(
-			'CSP\Directive\DirectiveInterface',
-			new ActualDirective
-		);
-	}
+    /**
+     * @coversNothing
+     */
+    public function testDirectiveInterface()
+    {
+        $this->assertInstanceOf(
+            'CSP\Directive\DirectiveInterface',
+            new ActualDirective
+        );
+    }
 
-	/**
-	 * @covers CSP\Directive\AbstractDirective::__construct
-	 */
-	public function testConstructor()
-	{
-		$directive = $this->getMock('CSP\Test\Directive\ActualDirective', array(
-			'setValue',
-		));
+    /**
+     * @covers CSP\Directive\AbstractDirective::__construct
+     */
+    public function testConstructor()
+    {
+        $directive = $this->getMock('CSP\Test\Directive\ActualDirective', array(
+            'setValue',
+        ));
 
-		$directive
-			->expects($this->at(0))
-			->method('setValue')
-			->with($this->equalTo(''))
-			->will($this->returnValue($directive));
+        $directive
+            ->expects($this->at(0))
+            ->method('setValue')
+            ->with($this->equalTo(''))
+            ->will($this->returnValue($directive));
 
-		$directive
-			->expects($this->at(1))
-			->method('setValue')
-			->with($this->equalTo('ABCDE'))
-			->will($this->returnValue($directive));
+        $directive
+            ->expects($this->at(1))
+            ->method('setValue')
+            ->with($this->equalTo('ABCDE'))
+            ->will($this->returnValue($directive));
 
-		$directive->__construct();
-		$directive->__construct('');
-		$directive->__construct('ABCDE');
-	}
+        $directive->__construct();
+        $directive->__construct('');
+        $directive->__construct('ABCDE');
+    }
 
-	/**
-	 * @covers CSP\Directive\AbstractDirective::getName
-	 */
-	public function testGetName()
-	{
-		$directive = new ActualDirective;
-		$this->assertSame('test-directive', $directive->getName());
-	}
+    /**
+     * @covers CSP\Directive\AbstractDirective::getName
+     */
+    public function testGetName()
+    {
+        $directive = new ActualDirective;
+        $this->assertSame('test-directive', $directive->getName());
+    }
 
-	/**
-	 * @covers CSP\Directive\AbstractDirective::getValue
-	 */
-	public function testGetValue()
-	{
-		$directive = new ActualDirective('ABCDE');
-		$this->assertSame('ABCDE', $directive->getValue());
-	}
+    /**
+     * @covers CSP\Directive\AbstractDirective::getValue
+     */
+    public function testGetValue()
+    {
+        $directive = new ActualDirective('ABCDE');
+        $this->assertSame('ABCDE', $directive->getValue());
+    }
 
-	/**
-	 * @covers CSP\Directive\AbstractDirective::setValue
-	 */
-	public function testSetValue()
-	{
-		$directive = new ActualDirective;
-		$directive->setValue('ABCDE');
-		$this->assertSame('ABCDE', $directive->getValue());
-	}
+    /**
+     * @covers CSP\Directive\AbstractDirective::setValue
+     */
+    public function testSetValue()
+    {
+        $directive = new ActualDirective;
+        $directive->setValue('ABCDE');
+        $this->assertSame('ABCDE', $directive->getValue());
+    }
 
-	/**
-	 * @covers CSP\Directive\AbstractDirective::setValue
-	 */
-	public function testSetValueChaining($value='')
-	{
-		$directive = new ActualDirective;
-		$setValueResult = $directive->setValue('ABCDE');
-		$this->assertSame($directive, $setValueResult);
-	}
+    /**
+     * @covers CSP\Directive\AbstractDirective::setValue
+     */
+    public function testSetValueChaining($value='')
+    {
+        $directive = new ActualDirective;
+        $setValueResult = $directive->setValue('ABCDE');
+        $this->assertSame($directive, $setValueResult);
+    }
 
-	public function testRender()
-	{
-		$directive = new ActualDirective;
-		$this->assertSame('test-directive test-value', $directive->render());
-	}
+    public function testRender()
+    {
+        $directive = new ActualDirective;
+        $this->assertSame('test-directive test-value', $directive->render());
+    }
 }

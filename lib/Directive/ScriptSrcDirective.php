@@ -11,12 +11,12 @@ use CSP\Source\SourceList;
  */
 class ScriptSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'script-src';
+    const NAME = 'script-src';
 
-	protected $allowedSources = array(
-		SourceList::SOURCE_HOST,
-		SourceList::SOURCE_KEYWORD,
-		SourceList::SOURCE_SCHEME,
-		SourceList::SOURCE_NONCE,
-	);
+    protected $allowedSources = array(
+        SourceList::SOURCE_HOST,
+        SourceList::SOURCE_KEYWORD,
+        SourceList::SOURCE_SCHEME,
+        SourceList::SOURCE_NONCE,
+    );
 }

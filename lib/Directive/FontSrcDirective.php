@@ -6,5 +6,5 @@
  */
 class FontSrcDirective extends AbstractSrcDirective
 {
-	const NAME = 'font-src';
+    const NAME = 'font-src';
 }

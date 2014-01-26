@@ -2,20 +2,20 @@
 
 class HostSource implements SourceableInterface
 {
-	protected $host;
+    protected $host;
 
-	public function __construct($host)
-	{
-		$this->host = $host;
-	}
+    public function __construct($host)
+    {
+        $this->host = $host;
+    }
 
-	public function getHost()
-	{
-		return $this->host;
-	}
+    public function getHost()
+    {
+        return $this->host;
+    }
 
-	public function render()
-	{
-		return $this->getHost();
-	}
+    public function render()
+    {
+        return $this->getHost();
+    }
 }

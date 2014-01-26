@@ -6,69 +6,69 @@ use CSP\Policy;
 
 class ContentSecurityPolicyHeaderTest extends TestCase
 {
-	/**
-	 * @coversNothing
-	 */
-	public function testHeaderInterface()
-	{
-		$header = new ContentSecurityPolicyHeader;
-		$this->assertInstanceOf('CSP\Header\HeaderInterface', $header);
-	}
+    /**
+     * @coversNothing
+     */
+    public function testHeaderInterface()
+    {
+        $header = new ContentSecurityPolicyHeader;
+        $this->assertInstanceOf('CSP\Header\HeaderInterface', $header);
+    }
 
-	/**
-	 * @covers CSP\Header\ContentSecurityPolicyHeader::__construct
-	 */
-	public function testConstructor()
-	{
-		$header = new ContentSecurityPolicyHeader;
-		$this->assertNull($header->getValue());
+    /**
+     * @covers CSP\Header\ContentSecurityPolicyHeader::__construct
+     */
+    public function testConstructor()
+    {
+        $header = new ContentSecurityPolicyHeader;
+        $this->assertNull($header->getValue());
 
-		$header = new ContentSecurityPolicyHeader(NULL);
-		$this->assertNull($header->getValue());
+        $header = new ContentSecurityPolicyHeader(NULL);
+        $this->assertNull($header->getValue());
 
-		$policy = new Policy;
-		$header = new ContentSecurityPolicyHeader($policy);
-		$this->assertSame($policy, $header->getValue());
-	}
+        $policy = new Policy;
+        $header = new ContentSecurityPolicyHeader($policy);
+        $this->assertSame($policy, $header->getValue());
+    }
 
-	/**
-	 * @covers CSP\Header\ContentSecurityPolicyHeader::getValue
-	 */
-	public function testGetValue()
-	{
-		$header = new ContentSecurityPolicyHeader;
-		$this->assertNull($header->getValue());
+    /**
+     * @covers CSP\Header\ContentSecurityPolicyHeader::getValue
+     */
+    public function testGetValue()
+    {
+        $header = new ContentSecurityPolicyHeader;
+        $this->assertNull($header->getValue());
 
-		$policy = new Policy;
-		$header->setValue($policy);
-		$this->assertSame($policy, $header->getValue());
-	}
+        $policy = new Policy;
+        $header->setValue($policy);
+        $this->assertSame($policy, $header->getValue());
+    }
 
-	/**
-	 * @covers CSP\Header\ContentSecurityPolicyHeader::setValue
-	 */
-	public function testSetValue()
-	{
-		$header = new ContentSecurityPolicyHeader;
-		$policy = new Policy;
-		$header->setValue($policy);
-		$this->assertSame($policy, $header->getValue());
-	}
+    /**
+     * @covers CSP\Header\ContentSecurityPolicyHeader::setValue
+     */
+    public function testSetValue()
+    {
+        $header = new ContentSecurityPolicyHeader;
+        $policy = new Policy;
+        $header->setValue($policy);
+        $this->assertSame($policy, $header->getValue());
+    }
 
-	/**
-	 * @covers CSP\Header\ContentSecurityPolicyHeader::setValue
-	 */
-	public function testSetValueArgumentException()
-	{
-		$this->setExpectedException('InvalidArgumentException', 'ContentSecurityPolicyHeader value must be an instance of PolicyInterface');
-		$header = new ContentSecurityPolicyHeader;
-		$header->setValue('ABCDE');
-	}
+    /**
+     * @covers CSP\Header\ContentSecurityPolicyHeader::setValue
+     */
+    public function testSetValueArgumentException()
+    {
+        $this->setExpectedException('InvalidArgumentException', 'ContentSecurityPolicyHeader value must be an instance of PolicyInterface');
+        $header = new ContentSecurityPolicyHeader;
+        $header->setValue('ABCDE');
+    }
 
-	public function testGetName()
-	{
-		$header = new ContentSecurityPolicyHeader;
-		$this->assertSame(ContentSecurityPolicyHeader::NAME, $header->getName());
-	}
+    public function testGetName()
+    {
+        $header = new ContentSecurityPolicyHeader;
+        $this->assertSame(ContentSecurityPolicyHeader::NAME, $header->getName());
+    }
 
 }
