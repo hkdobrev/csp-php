@@ -10,8 +10,7 @@ class ContentSecurityPolicyHeader implements HeaderInterface
 
 	public function __construct($value = NULL)
 	{
-		if ($value)
-		{
+		if ($value) {
 			$this->setValue($value);
 		}
 	}

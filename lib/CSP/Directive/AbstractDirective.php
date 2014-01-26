@@ -8,8 +8,7 @@ abstract class AbstractDirective implements DirectiveInterface
 
 	public function __construct($value = NULL)
 	{
-		if ($value !== NULL)
-		{
+		if ($value !== NULL) {
 			$this->setValue($value);
 		}
 	}
