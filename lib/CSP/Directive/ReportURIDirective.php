@@ -5,7 +5,7 @@ use CSP\URI;
 /**
  * URI for the browser to submit violations of the Content Security Policy
  */
-class ReportURIDirective extends Directive
+class ReportURIDirective extends AbstractDirective
 {
 	const NAME = 'report-uri';
 

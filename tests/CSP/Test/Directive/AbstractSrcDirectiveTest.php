@@ -4,7 +4,7 @@ use CSP\Test\TestCase;
 use CSP\Test\Directive\ActualSrcDirective;
 use CSP\Source\SourceList;
 
-class SrcDirectiveTest extends TestCase
+class AbstractSrcDirectiveTest extends TestCase
 {
 	/**
 	 * @coversNothing
@@ -15,7 +15,7 @@ class SrcDirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\SrcDirective::setValue
+	 * @covers CSP\Directive\AbstractSrcDirective::setValue
 	 */
 	public function testSetValueArgumentException()
 	{
@@ -25,7 +25,7 @@ class SrcDirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\SrcDirective::setValue
+	 * @covers CSP\Directive\AbstractSrcDirective::setValue
 	 */
 	public function testSetValue()
 	{
@@ -36,7 +36,7 @@ class SrcDirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\SrcDirective::renderValue
+	 * @covers CSP\Directive\AbstractSrcDirective::renderValue
 	 */
 	public function testRenderValue()
 	{

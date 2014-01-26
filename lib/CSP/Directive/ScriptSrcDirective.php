@@ -9,7 +9,7 @@ use CSP\Source\SourceList;
  * Use `unsafe-inline`to allow inline scripts or inline event handler.
  * Use `unsafe-eval` to allow unsafe dynamic code evaluation - passing
  */
-class ScriptSrcDirective extends SrcDirective
+class ScriptSrcDirective extends AbstractSrcDirective
 {
 	const NAME = 'script-src';
 

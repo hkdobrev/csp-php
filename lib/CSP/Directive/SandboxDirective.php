@@ -5,7 +5,7 @@ use CSP\Util\TokenList;
 /**
  * Rules for sandboxing iframes
  */
-class SandboxDirective extends Directive
+class SandboxDirective extends AbstractDirective
 {
 	const NAME = 'sandbox';
 

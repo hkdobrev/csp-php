@@ -1,6 +1,6 @@
 <?php namespace CSP\Directive;
 
-abstract class Directive implements DirectiveInterface
+abstract class AbstractDirective implements DirectiveInterface
 {
 	const NAME_VALUE_DELIMITER = ' ';
 

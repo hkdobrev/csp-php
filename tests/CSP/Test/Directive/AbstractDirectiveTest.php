@@ -3,7 +3,7 @@
 use CSP\Test\TestCase;
 use CSP\Test\Directive\ActualDirective;
 
-class DirectiveTest extends TestCase
+class AbstractDirectiveTest extends TestCase
 {
 	/**
 	 * @coversNothing
@@ -14,7 +14,7 @@ class DirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\Directive::__construct
+	 * @covers CSP\Directive\AbstractDirective::__construct
 	 */
 	public function testConstructor()
 	{
@@ -38,7 +38,7 @@ class DirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\Directive::getName
+	 * @covers CSP\Directive\AbstractDirective::getName
 	 */
 	public function testGetName()
 	{
@@ -47,7 +47,7 @@ class DirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\Directive::getValue
+	 * @covers CSP\Directive\AbstractDirective::getValue
 	 */
 	public function testGetValue()
 	{
@@ -56,7 +56,7 @@ class DirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\Directive::setValue
+	 * @covers CSP\Directive\AbstractDirective::setValue
 	 */
 	public function testSetValue()
 	{
@@ -66,7 +66,7 @@ class DirectiveTest extends TestCase
 	}
 
 	/**
-	 * @covers CSP\Directive\Directive::setValue
+	 * @covers CSP\Directive\AbstractDirective::setValue
 	 */
 	public function testSetValueChaining($value='')
 	{

@@ -7,7 +7,7 @@ use CSP\Source\SourceList;
  *  - `src` attribute in img element
  *  - `url()` construct in CSS
  */
-class ImgSrcDirective extends SrcDirective
+class ImgSrcDirective extends AbstractSrcDirective
 {
 	const NAME = 'img-src';
 }

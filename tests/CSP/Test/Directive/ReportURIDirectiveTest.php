@@ -11,7 +11,7 @@ class ReportURIDirectiveTest extends TestCase
 	 */
 	public function testDirective()
 	{
-		$this->assertInstanceOf('CSP\Directive\Directive', new ReportURIDirective);
+		$this->assertInstanceOf('CSP\Directive\AbstractDirective', new ReportURIDirective);
 	}
 
 	/**

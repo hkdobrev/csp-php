@@ -8,7 +8,7 @@ use CSP\Source\SourceList;
  *  - `WebSocket` constructor
  *  - `EventSource` constructor
  */
-class ConnectSrcDirective extends SrcDirective
+class ConnectSrcDirective extends AbstractSrcDirective
 {
 	const NAME = 'connect-src';
 }

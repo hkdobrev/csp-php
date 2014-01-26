@@ -7,7 +7,7 @@ use CSP\Source\SourceList;
  *  - `href` attribute on link elements with stylesheet relation
  *  - import statements in CSS code
  */
-class StyleSrcDirective extends SrcDirective
+class StyleSrcDirective extends AbstractSrcDirective
 {
 	const NAME = 'style-src';
 }

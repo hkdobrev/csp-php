@@ -1,8 +1,8 @@
 <?php namespace CSP\Test\Directive;
 
-use CSP\Directive\Directive;
+use CSP\Directive\AbstractDirective;
 
-class ActualDirective extends Directive
+class ActualDirective extends AbstractDirective
 {
 	const NAME = 'test-directive';
 

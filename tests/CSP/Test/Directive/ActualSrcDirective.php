@@ -1,5 +1,5 @@
 <?php namespace CSP\Test\Directive;
 
-use CSP\Directive\SrcDirective;
+use CSP\Directive\AbstractSrcDirective;
 
-class ActualSrcDirective extends SrcDirective {}
+class ActualSrcDirective extends AbstractSrcDirective {}
