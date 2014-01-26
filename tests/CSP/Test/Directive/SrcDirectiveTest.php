@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Test\Directive;
+<?php namespace CSP\Test\Directive;
 
 use CSP\Test\TestCase;
 use CSP\Test\Directive\ActualSrcDirective;

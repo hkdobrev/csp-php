@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP;
+<?php namespace CSP;
 
 /**
  * Implementing this interface means an object could be rendered to a string.

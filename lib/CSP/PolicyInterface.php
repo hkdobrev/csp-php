@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP;
+<?php namespace CSP;
 
 use CSP\Directive\DirectiveList;
 

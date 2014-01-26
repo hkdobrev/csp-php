@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Test;
+<?php namespace CSP\Test;
 
 use CSP\Policy;
 use CSP\Directive\DirectiveList;

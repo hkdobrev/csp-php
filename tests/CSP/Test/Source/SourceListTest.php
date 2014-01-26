@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Test\Source;
+<?php namespace CSP\Test\Source;
 
 use CSP\Test\TestCase;
 use CSP\Source\SourceList;

@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Header;
+<?php namespace CSP\Header;
 
 use CSP\PolicyInterface;
 

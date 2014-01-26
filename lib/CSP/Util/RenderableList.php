@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Util;
+<?php namespace CSP\Util;
 
 use ArrayObject;
 use CSP\Renderable;

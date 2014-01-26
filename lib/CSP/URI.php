@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP;
+<?php namespace CSP;
 
 class URI implements Renderable {
 

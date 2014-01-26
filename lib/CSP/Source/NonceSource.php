@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Source;
+<?php namespace CSP\Source;
 
 class NonceSource implements Sourceable {
 

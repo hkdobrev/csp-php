@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Test\Header;
+<?php namespace CSP\Test\Header;
 
 use CSP\Test\TestCase;
 use CSP\Header\ContentSecurityPolicyHeader;

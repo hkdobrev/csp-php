@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Directive;
+<?php namespace CSP\Directive;
 
 use CSP\Util\RenderableList;
 

@@ -1,6 +1,4 @@
-<?php
-
-namespace CSP\Test\Util;
+<?php namespace CSP\Test\Util;
 
 use CSP\Renderable;
 
