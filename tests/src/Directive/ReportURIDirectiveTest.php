@@ -55,6 +55,4 @@ class ReportURIDirectiveTest extends TestCase
         $directive = new ReportURIDirective($uri);
         $this->assertSame('ABCDE', $directive->renderValue());
     }
-
-
 }

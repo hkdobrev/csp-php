@@ -53,6 +53,4 @@ class SandboxDirectiveTest extends TestCase
         $directive = new SandboxDirective($tokenList);
         $this->assertSame('ABCDE', $directive->renderValue());
     }
-
-
 }

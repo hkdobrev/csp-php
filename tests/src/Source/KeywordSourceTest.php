@@ -34,5 +34,4 @@ class KeywordSourceTest extends TestCase
         $keywordSource = new KeywordSource('abc');
         $this->assertSame('abc', $keywordSource->render());
     }
-
 }

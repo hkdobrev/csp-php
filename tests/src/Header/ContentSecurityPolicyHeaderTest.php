@@ -70,5 +70,4 @@ class ContentSecurityPolicyHeaderTest extends TestCase
         $header = new ContentSecurityPolicyHeader;
         $this->assertSame(ContentSecurityPolicyHeader::NAME, $header->getName());
     }
-
 }
