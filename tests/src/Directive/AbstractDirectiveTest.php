@@ -73,7 +73,7 @@ class AbstractDirectiveTest extends TestCase
     /**
      * @covers CSP\Directive\AbstractDirective::setValue
      */
-    public function testSetValueChaining($value='')
+    public function testSetValueChaining($value = '')
     {
         $directive = new ActualDirective;
         $setValueResult = $directive->setValue('ABCDE');
