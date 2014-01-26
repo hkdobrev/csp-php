@@ -22,7 +22,10 @@ class SandboxDirectiveTest extends TestCase
      */
     public function testSetValueArgumentException()
     {
-        $this->setExpectedException('InvalidArgumentException', 'SandboxDirective value must be an instance of TokenList');
+        $this->setExpectedException(
+            'InvalidArgumentException',
+            'SandboxDirective value must be an instance of TokenList'
+        );
         $directive = new SandboxDirective;
         $directive->setValue('ABCDE');
     }

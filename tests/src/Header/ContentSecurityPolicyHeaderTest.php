@@ -60,7 +60,10 @@ class ContentSecurityPolicyHeaderTest extends TestCase
      */
     public function testSetValueArgumentException()
     {
-        $this->setExpectedException('InvalidArgumentException', 'ContentSecurityPolicyHeader value must be an instance of PolicyInterface');
+        $this->setExpectedException(
+            'InvalidArgumentException',
+            'ContentSecurityPolicyHeader value must be an instance of PolicyInterface'
+        );
         $header = new ContentSecurityPolicyHeader;
         $header->setValue('ABCDE');
     }
