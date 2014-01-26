@@ -2,4 +2,7 @@
 
 use CSP\Directive\AbstractSrcDirective;
 
-class ActualSrcDirective extends AbstractSrcDirective {}
+class ActualSrcDirective extends AbstractSrcDirective
+{
+
+}

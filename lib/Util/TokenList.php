@@ -2,4 +2,7 @@
 
 use CSP\Util\RenderableList;
 
-class TokenList extends RenderableList {}
+class TokenList extends RenderableList
+{
+
+}

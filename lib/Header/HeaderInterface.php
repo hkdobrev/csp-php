@@ -1,6 +1,7 @@
 <?php namespace CSP\Header;
 
-interface HeaderInterface {
+interface HeaderInterface
+{
 
     public function __construct($value = null);
 

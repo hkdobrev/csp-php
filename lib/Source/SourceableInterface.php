@@ -2,4 +2,7 @@
 
 use CSP\RenderableInterface;
 
-interface SourceableInterface extends RenderableInterface {}
+interface SourceableInterface extends RenderableInterface
+{
+
+}

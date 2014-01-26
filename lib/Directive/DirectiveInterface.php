@@ -2,7 +2,8 @@
 
 use CSP\RenderableInterface;
 
-interface DirectiveInterface extends RenderableInterface {
+interface DirectiveInterface extends RenderableInterface
+{
 
     public function getName();
 
