@@ -1,8 +1,8 @@
 <?php namespace CSP\Directive;
 
-use CSP\Renderable;
+use CSP\RenderableInterface;
 
-interface DirectiveInterface extends Renderable {
+interface DirectiveInterface extends RenderableInterface {
 
 	public function getName();
 

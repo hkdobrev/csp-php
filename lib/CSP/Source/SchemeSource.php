@@ -1,6 +1,6 @@
 <?php namespace CSP\Source;
 
-class SchemeSource implements Sourceable
+class SchemeSource implements SourceableInterface
 {
 	const SCHEME_SUFFIX = ':';
 

@@ -20,7 +20,7 @@ class RenderableListTest extends TestCase
 	 */
 	public function testRenderable()
 	{
-		$this->assertInstanceOf('CSP\Renderable', new RenderableList);
+		$this->assertInstanceOf('CSP\RenderableInterface', new RenderableList);
 	}
 
 	/**

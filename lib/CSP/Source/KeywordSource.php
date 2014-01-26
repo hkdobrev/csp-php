@@ -1,6 +1,6 @@
 <?php namespace CSP\Source;
 
-class KeywordSource implements Sourceable
+class KeywordSource implements SourceableInterface
 {
 	const KEYWORD_SELF = "'self'";
 

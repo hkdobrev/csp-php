@@ -2,7 +2,7 @@
 
 use CSP\PolicyInterface;
 
-class ContentSecurityPolicyHeader implements Header
+class ContentSecurityPolicyHeader implements HeaderInterface
 {
 	const NAME = 'Content-Security-Policy';
 

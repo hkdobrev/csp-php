@@ -10,7 +10,7 @@ class SchemeSourceTest extends TestCase
 	 */
 	public function testSourceable()
 	{
-		$this->assertInstanceOf('CSP\Source\Sourceable', new SchemeSource('abc'));
+		$this->assertInstanceOf('CSP\Source\SourceableInterface', new SchemeSource('abc'));
 	}
 
 	/**

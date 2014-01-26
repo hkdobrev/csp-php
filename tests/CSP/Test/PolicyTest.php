@@ -10,7 +10,7 @@ class PolicyTest extends TestCase
 	 */
 	public function testRenderable()
 	{
-		$this->assertInstanceOf('CSP\Renderable', new Policy);
+		$this->assertInstanceOf('CSP\RenderableInterface', new Policy);
 	}
 
 	/**

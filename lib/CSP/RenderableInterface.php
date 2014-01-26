@@ -3,7 +3,7 @@
 /**
  * Implementing this interface means an object could be rendered to a string.
  */
-interface Renderable {
+interface RenderableInterface {
 
 	/**
 	 * Get the string representation

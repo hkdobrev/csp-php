@@ -1,6 +1,6 @@
 <?php namespace CSP;
 
-class URI implements Renderable
+class URI implements RenderableInterface
 {
 	protected $uri;
 

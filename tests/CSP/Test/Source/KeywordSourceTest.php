@@ -10,7 +10,7 @@ class KeywordSourceTest extends TestCase
 	 */
 	public function testSourceable()
 	{
-		$this->assertInstanceOf('CSP\Source\Sourceable', new KeywordSource('abc'));
+		$this->assertInstanceOf('CSP\Source\SourceableInterface', new KeywordSource('abc'));
 	}
 
 	/**

@@ -1,8 +1,8 @@
 <?php namespace CSP\Util;
 
-use CSP\Renderable;
+use CSP\RenderableInterface;
 
-class Token implements Renderable
+class Token implements RenderableInterface
 {
 	protected $value;
 

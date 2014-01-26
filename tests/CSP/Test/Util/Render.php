@@ -1,8 +1,8 @@
 <?php namespace CSP\Test\Util;
 
-use CSP\Renderable;
+use CSP\RenderableInterface;
 
-class Render implements Renderable
+class Render implements RenderableInterface
 {
 	protected $value;
 

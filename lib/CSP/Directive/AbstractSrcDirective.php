@@ -2,7 +2,7 @@
 
 use CSP\Source\SourceList;
 
-abstract class AbstractSrcDirective extends AbstractDirective implements SourceableDirective
+abstract class AbstractSrcDirective extends AbstractDirective implements SourceableDirectiveInterface
 {
 	protected $allowedSources = array(
 		SourceList::SOURCE_HOST,

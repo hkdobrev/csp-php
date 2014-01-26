@@ -2,7 +2,7 @@
 
 use CSP\Directive\DirectiveList;
 
-interface PolicyInterface extends Renderable {
+interface PolicyInterface extends RenderableInterface {
 
 	public function __construct(DirectiveList $directives = NULL);
 

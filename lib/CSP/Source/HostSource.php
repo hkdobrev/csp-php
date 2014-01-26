@@ -1,6 +1,6 @@
 <?php namespace CSP\Source;
 
-class HostSource implements Sourceable
+class HostSource implements SourceableInterface
 {
 	protected $host;
 

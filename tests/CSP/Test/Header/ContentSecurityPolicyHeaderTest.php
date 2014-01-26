@@ -9,10 +9,10 @@ class ContentSecurityPolicyHeaderTest extends TestCase
 	/**
 	 * @coversNothing
 	 */
-	public function testHeader()
+	public function testHeaderInterface()
 	{
 		$header = new ContentSecurityPolicyHeader;
-		$this->assertInstanceOf('CSP\Header\Header', $header);
+		$this->assertInstanceOf('CSP\Header\HeaderInterface', $header);
 	}
 
 	/**

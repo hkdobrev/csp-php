@@ -10,7 +10,7 @@ class NonceSourceTest extends TestCase
 	 */
 	public function testSourceable()
 	{
-		$this->assertInstanceOf('CSP\Source\Sourceable', new NonceSource('abc'));
+		$this->assertInstanceOf('CSP\Source\SourceableInterface', new NonceSource('abc'));
 	}
 
 	/**
