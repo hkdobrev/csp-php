@@ -1,6 +1,6 @@
 <?php
 
-namespace CSP\Sandbox;
+namespace CSP\Util;
 
 use CSP\Util\RenderableList;
 
