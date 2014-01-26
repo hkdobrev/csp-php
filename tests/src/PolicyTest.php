@@ -29,7 +29,7 @@ class PolicyTest extends TestCase
         $policy = new Policy;
         $this->assertNull($policy->getDirectives());
 
-        $policy = new Policy(NULL);
+        $policy = new Policy(null);
         $this->assertNull($policy->getDirectives());
 
         $directives = new DirectiveList;

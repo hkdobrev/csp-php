@@ -10,7 +10,7 @@ class Policy implements PolicyInterface
      */
     protected $directives;
 
-    public function __construct(DirectiveList $directives = NULL)
+    public function __construct(DirectiveList $directives = null)
     {
         if ($directives) {
             $this->setDirectives($directives);

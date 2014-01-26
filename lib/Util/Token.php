@@ -6,9 +6,9 @@ class Token implements RenderableInterface
 {
     protected $value;
 
-    public function __construct($value = NULL)
+    public function __construct($value = null)
     {
-        if ($value !== NULL)
+        if ($value !== null)
         {
             $this->value = $value;
         }

@@ -13,10 +13,10 @@ class TokenTest extends TestCase
         $token = new Token;
         $this->assertNull($token->getValue());
 
-        $token = new Token(NULL);
+        $token = new Token(null);
         $this->assertNull($token->getValue());
 
-        $token = new Token(FALSE);
+        $token = new Token(false);
         $this->assertFalse($token->getValue());
 
         $token = new Token('ABCDE');
@@ -34,7 +34,7 @@ class TokenTest extends TestCase
         $token->setValue('ABCDE');
         $this->assertSame('ABCDE', $token->getValue());
 
-        $token->setValue(NULL);
+        $token->setValue(null);
         $this->assertNull($token->getValue());
     }
 
@@ -47,10 +47,10 @@ class TokenTest extends TestCase
         $token->setValue('ABCDE');
         $this->assertSame('ABCDE', $token->getValue());
 
-        $token->setValue(FALSE);
+        $token->setValue(false);
         $this->assertFalse($token->getValue());
 
-        $token->setValue(NULL);
+        $token->setValue(null);
         $this->assertNull($token->getValue());
     }
 

@@ -2,7 +2,7 @@
 
 interface HeaderInterface {
 
-    public function __construct($value = NULL);
+    public function __construct($value = null);
 
     /**
      * Get the name of the header (the part before the colon)

@@ -12,7 +12,7 @@ class URI implements RenderableInterface
 
     public function check()
     {
-        return TRUE;
+        return true;
     }
 
     public function render()

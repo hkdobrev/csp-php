@@ -23,7 +23,7 @@ class ContentSecurityPolicyHeaderTest extends TestCase
         $header = new ContentSecurityPolicyHeader;
         $this->assertNull($header->getValue());
 
-        $header = new ContentSecurityPolicyHeader(NULL);
+        $header = new ContentSecurityPolicyHeader(null);
         $this->assertNull($header->getValue());
 
         $policy = new Policy;
