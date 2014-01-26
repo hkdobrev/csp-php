@@ -8,7 +8,7 @@ use CSP\Source\SourceList;
  *  - `src` attribute on `embed` elements
  *  - `code` or `archive` attribute on `applet` elements
  */
-class ObjectSrcDirective extends SrcDirective {
-
+class ObjectSrcDirective extends SrcDirective
+{
 	const NAME = 'object-src';
 }

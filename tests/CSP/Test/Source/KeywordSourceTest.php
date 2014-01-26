@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Source\KeywordSource;
 
-class KeywordSourceTest extends TestCase {
-
+class KeywordSourceTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

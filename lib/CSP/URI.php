@@ -1,7 +1,7 @@
 <?php namespace CSP;
 
-class URI implements Renderable {
-
+class URI implements Renderable
+{
 	protected $uri;
 
 	public function __construct($uri)

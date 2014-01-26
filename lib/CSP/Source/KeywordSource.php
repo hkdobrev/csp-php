@@ -1,7 +1,7 @@
 <?php namespace CSP\Source;
 
-class KeywordSource implements Sourceable {
-
+class KeywordSource implements Sourceable
+{
 	const KEYWORD_SELF = "'self'";
 
 	const KEYWORD_UNSAFE_INLINE = "'unsafe-inline'";

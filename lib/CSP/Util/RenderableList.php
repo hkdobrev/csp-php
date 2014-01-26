@@ -3,8 +3,8 @@
 use ArrayObject;
 use CSP\Renderable;
 
-class RenderableList extends ArrayObject implements Renderable {
-
+class RenderableList extends ArrayObject implements Renderable
+{
 	const ITEM_DELIMITER = ' ';
 
 	public function render()

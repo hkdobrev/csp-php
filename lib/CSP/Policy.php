@@ -2,8 +2,8 @@
 
 use CSP\Directive\DirectiveList;
 
-class Policy implements PolicyInterface {
-
+class Policy implements PolicyInterface
+{
 	/**
 	 * List of directives
 	 * @var CSP\Directive\DirectiveList

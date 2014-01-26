@@ -2,7 +2,7 @@
 
 use CSP\Util\RenderableList;
 
-class RenderableListWithComma extends RenderableList {
-
+class RenderableListWithComma extends RenderableList
+{
 	const ITEM_DELIMITER = ',';
 }

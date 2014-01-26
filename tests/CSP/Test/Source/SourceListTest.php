@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Source\SourceList;
 
-class SourceListTest extends TestCase {
-
+class SourceListTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

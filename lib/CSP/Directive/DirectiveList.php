@@ -2,7 +2,7 @@
 
 use CSP\Util\RenderableList;
 
-class DirectiveList extends RenderableList {
-
+class DirectiveList extends RenderableList
+{
 	const ITEM_DELIMITER = '; ';
 }

@@ -5,8 +5,8 @@ use CSP\Util\TokenList;
 /**
  * Rules for sandboxing iframes
  */
-class SandboxDirective extends Directive {
-
+class SandboxDirective extends Directive
+{
 	const NAME = 'sandbox';
 
 	public function setValue($tokens)

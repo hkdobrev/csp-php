@@ -1,7 +1,7 @@
 <?php namespace CSP\Directive;
 
-abstract class Directive implements DirectiveInterface {
-
+abstract class Directive implements DirectiveInterface
+{
 	const NAME_VALUE_DELIMITER = ' ';
 
 	protected $value;

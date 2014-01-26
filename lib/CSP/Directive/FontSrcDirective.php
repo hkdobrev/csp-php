@@ -4,7 +4,7 @@
  * Restrict sources of fonts. Such as:
  *  - `@font-face` rule in CSS
  */
-class FontSrcDirective extends SrcDirective {
-
+class FontSrcDirective extends SrcDirective
+{
 	const NAME = 'font-src';
 }

@@ -4,8 +4,8 @@ use CSP\Test\TestCase;
 use CSP\Header\ContentSecurityPolicyHeader;
 use CSP\Policy;
 
-class ContentSecurityPolicyHeaderTest extends TestCase {
-
+class ContentSecurityPolicyHeaderTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

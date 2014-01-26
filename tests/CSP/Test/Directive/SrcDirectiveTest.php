@@ -4,8 +4,8 @@ use CSP\Test\TestCase;
 use CSP\Test\Directive\ActualSrcDirective;
 use CSP\Source\SourceList;
 
-class SrcDirectiveTest extends TestCase {
-
+class SrcDirectiveTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

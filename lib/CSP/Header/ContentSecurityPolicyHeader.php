@@ -2,8 +2,8 @@
 
 use CSP\PolicyInterface;
 
-class ContentSecurityPolicyHeader implements Header {
-
+class ContentSecurityPolicyHeader implements Header
+{
 	const NAME = 'Content-Security-Policy';
 
 	protected $value;

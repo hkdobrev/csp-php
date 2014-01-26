@@ -2,8 +2,8 @@
 
 use CSP\Renderable;
 
-class Render implements Renderable {
-
+class Render implements Renderable
+{
 	protected $value;
 
 	public function __construct($value)

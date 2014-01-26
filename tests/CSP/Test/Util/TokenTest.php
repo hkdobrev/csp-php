@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Util\Token;
 
-class TokenTest extends TestCase {
-
+class TokenTest extends TestCase
+{
 	/**
 	 * @covers CSP\Util\Token::__construct
 	 */

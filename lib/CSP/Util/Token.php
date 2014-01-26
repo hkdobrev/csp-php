@@ -2,8 +2,8 @@
 
 use CSP\Renderable;
 
-class Token implements Renderable {
-
+class Token implements Renderable
+{
 	protected $value;
 
 	public function __construct($value = NULL)

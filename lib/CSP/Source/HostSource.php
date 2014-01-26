@@ -1,7 +1,7 @@
 <?php namespace CSP\Source;
 
-class HostSource implements Sourceable {
-
+class HostSource implements Sourceable
+{
 	protected $host;
 
 	public function __construct($host)

@@ -5,8 +5,8 @@ use CSP\Util\RenderableList;
 use CSP\Test\Util\Render;
 use CSP\Test\Util\RenderableListWithComma;
 
-class RenderableListTest extends TestCase {
-
+class RenderableListTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

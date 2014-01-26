@@ -2,8 +2,8 @@
 
 use CSP\Directive\Directive;
 
-class ActualDirective extends Directive {
-
+class ActualDirective extends Directive
+{
 	const NAME = 'test-directive';
 
 	public function renderValue()

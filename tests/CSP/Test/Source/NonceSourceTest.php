@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Source\NonceSource;
 
-class NonceSourceTest extends TestCase {
-
+class NonceSourceTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

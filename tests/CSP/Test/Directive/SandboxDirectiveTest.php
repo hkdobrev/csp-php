@@ -4,8 +4,8 @@ use CSP\Test\TestCase;
 use CSP\Directive\SandboxDirective;
 use CSP\Util\TokenList;
 
-class SandboxDirectiveTest extends TestCase {
-
+class SandboxDirectiveTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

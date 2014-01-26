@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Test\Directive\ActualDirective;
 
-class DirectiveTest extends TestCase {
-
+class DirectiveTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

@@ -9,7 +9,7 @@ use CSP\Source\SourceList;
  *  - `src` attribute on source elements
  *  - `src` attribute on track elements
  */
-class MediaSrcDirective extends SrcDirective {
-
+class MediaSrcDirective extends SrcDirective
+{
 	const NAME = 'media-src';
 }

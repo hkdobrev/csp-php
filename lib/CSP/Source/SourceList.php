@@ -2,8 +2,8 @@
 
 use CSP\Util\RenderableList;
 
-class SourceList extends RenderableList {
-
+class SourceList extends RenderableList
+{
 	const SOURCE_KEYWORD = 'KeywordSource';
 
 	const SOURCE_HOST = 'HostSource';

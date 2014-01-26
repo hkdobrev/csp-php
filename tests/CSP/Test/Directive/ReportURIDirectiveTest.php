@@ -4,8 +4,8 @@ use CSP\Test\TestCase;
 use CSP\Directive\ReportURIDirective;
 use CSP\URI;
 
-class ReportURIDirectiveTest extends TestCase {
-
+class ReportURIDirectiveTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

@@ -1,7 +1,7 @@
 <?php namespace CSP\Source;
 
-class NonceSource implements Sourceable {
-
+class NonceSource implements Sourceable
+{
 	const NONCE_PREFIX = "'nonce-";
 
 	const NONCE_SUFFIX = "'";

@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Source\SchemeSource;
 
-class SchemeSourceTest extends TestCase {
-
+class SchemeSourceTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

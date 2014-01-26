@@ -3,8 +3,8 @@
 use CSP\Test\TestCase;
 use CSP\Source\HostSource;
 
-class HostSourceTest extends TestCase {
-
+class HostSourceTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

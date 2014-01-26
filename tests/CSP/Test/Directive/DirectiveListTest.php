@@ -4,8 +4,8 @@ use CSP\Test\TestCase;
 use CSP\Directive\DirectiveList;
 use CSP\Test\Util\Render;
 
-class DirectiveListTest extends TestCase {
-
+class DirectiveListTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */

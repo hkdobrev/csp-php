@@ -3,8 +3,8 @@
 use CSP\Policy;
 use CSP\Directive\DirectiveList;
 
-class PolicyTest extends TestCase {
-
+class PolicyTest extends TestCase
+{
 	/**
 	 * @coversNothing
 	 */
