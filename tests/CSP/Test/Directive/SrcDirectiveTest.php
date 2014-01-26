@@ -21,7 +21,7 @@ class SrcDirectiveTest extends TestCase {
 	 */
 	public function testSetValueArgumentException()
 	{
-		$this->setExpectedException('InvalidArgumentException', 'SrcDirective value must be a SourceList');
+		$this->setExpectedException('InvalidArgumentException', 'SrcDirective value must be an instance of SourceList');
 		$directive = new ActualSrcDirective;
 		$directive->setValue('ABCDE');
 	}
