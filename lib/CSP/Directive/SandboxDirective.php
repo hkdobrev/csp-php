@@ -2,7 +2,7 @@
 
 namespace CSP\Directive;
 
-use CSP\Sandbox\TokenList;
+use CSP\Util\TokenList;
 
 /**
  * Rules for sandboxing iframes
