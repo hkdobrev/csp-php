@@ -10,7 +10,10 @@ class AbstractDirectiveTest extends TestCase
 	 */
 	public function testDirectiveInterface()
 	{
-		$this->assertInstanceOf('CSP\Directive\DirectiveInterface', new ActualDirective);
+		$this->assertInstanceOf(
+			'CSP\Directive\DirectiveInterface',
+			new ActualDirective
+		);
 	}
 
 	/**
@@ -18,7 +21,9 @@ class AbstractDirectiveTest extends TestCase
 	 */
 	public function testConstructor()
 	{
-		$directive = $this->getMock('CSP\Test\Directive\ActualDirective', array('setValue'));
+		$directive = $this->getMock('CSP\Test\Directive\ActualDirective', array(
+			'setValue',
+		));
 
 		$directive
 			->expects($this->at(0))

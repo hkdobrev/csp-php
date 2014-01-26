@@ -1,13 +1,6 @@
 <?php
 
-require_once __DIR__.'/../vendor/autoload.php';
+error_reporting(E_ALL);
 
-spl_autoload_register(function($class)
-{
-	$file = __DIR__.DIRECTORY_SEPARATOR.str_replace(array('_', '\\'), '/', $class).'.php';
-
-	if (is_file($file))
-	{
-		require_once $file;
-	}
-});
+$loader = require __DIR__.'/../vendor/autoload.php';
+$loader->addPsr4('CSP\\Test\\', __DIR__.'/src');

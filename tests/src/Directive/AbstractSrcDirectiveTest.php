@@ -11,7 +11,10 @@ class AbstractSrcDirectiveTest extends TestCase
 	 */
 	public function testSourceableDirectiveInterface()
 	{
-		$this->assertInstanceOf('CSP\Directive\SourceableDirectiveInterface', new ActualSrcDirective);
+		$this->assertInstanceOf(
+			'CSP\Directive\SourceableDirectiveInterface',
+			new ActualSrcDirective
+		);
 	}
 
 	/**

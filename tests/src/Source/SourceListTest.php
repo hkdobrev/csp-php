@@ -12,5 +12,4 @@ class SourceListTest extends TestCase
 	{
 		$this->assertInstanceOf('CSP\Util\RenderableList', new SourceList);
 	}
-
 }

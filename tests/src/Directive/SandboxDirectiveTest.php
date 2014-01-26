@@ -11,7 +11,10 @@ class SandboxDirectiveTest extends TestCase
 	 */
 	public function testDirective()
 	{
-		$this->assertInstanceOf('CSP\Directive\AbstractDirective', new SandboxDirective);
+		$this->assertInstanceOf(
+			'CSP\Directive\AbstractDirective',
+			new SandboxDirective
+		);
 	}
 
 	/**

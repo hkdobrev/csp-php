@@ -10,7 +10,10 @@ class HostSourceTest extends TestCase
 	 */
 	public function testSourceable()
 	{
-		$this->assertInstanceOf('CSP\Source\SourceableInterface', new HostSource('abc'));
+		$this->assertInstanceOf(
+			'CSP\Source\SourceableInterface',
+			new HostSource('abc')
+		);
 	}
 
 	/**
