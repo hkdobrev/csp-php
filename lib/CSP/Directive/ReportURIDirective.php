@@ -11,8 +11,11 @@ class ReportURIDirective extends Directive {
 
 	const NAME = 'report-uri';
 
-	public function setValue(URI $uri)
+	public function setValue($uri)
 	{
+		if ( ! $uri instanceof URI)
+			throw new \InvalidArgumentException('ReportURIDirective value must be an instance of URI');
+
 		return parent::setValue($uri);
 	}
 

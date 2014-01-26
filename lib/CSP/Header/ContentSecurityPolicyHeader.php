@@ -10,7 +10,7 @@ class ContentSecurityPolicyHeader implements Header {
 
 	protected $_value;
 
-	public function __construct(PolicyInterface $value = NULL)
+	public function __construct($value = NULL)
 	{
 		if ($value)
 		{
@@ -30,6 +30,9 @@ class ContentSecurityPolicyHeader implements Header {
 
 	public function setValue($value)
 	{
+		if ( ! $value instanceof PolicyInterface)
+			throw new \InvalidArgumentException('ContentSecurityPolicyHeader value must be an instance of PolicyInterface');
+
 		$this->_value = $value;
 
 		return $this;

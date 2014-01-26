@@ -15,7 +15,7 @@ abstract class SrcDirective extends Directive implements SourceableDirective {
 	public function setValue($sourceList)
 	{
 		if ( ! $sourceList instanceof SourceList)
-			throw new \InvalidArgumentException('SrcDirective value must be a SourceList');
+			throw new \InvalidArgumentException('SrcDirective value must be an instance of SourceList');
 
 		return parent::setValue($sourceList);
 	}
