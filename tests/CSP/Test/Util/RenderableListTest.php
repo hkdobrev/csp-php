@@ -46,7 +46,7 @@ class RenderableListTest extends TestCase
 		$this->assertEquals('', $renderableList->render());
 
 		$renderableList = new RenderableList(array(
-			new Render('')
+			new Render(''),
 		));
 		$this->assertEquals('', $renderableList->render());
 	}

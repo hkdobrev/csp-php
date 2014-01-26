@@ -40,7 +40,9 @@ class ReportURIDirectiveTest extends TestCase
 	 */
 	public function testRenderValue()
 	{
-		$uri = $this->getMock('CSP\URI', array('render'), array('http://example.com'));
+		$uri = $this->getMock('CSP\URI', array(
+			'render',
+		), array('http://example.com'));
 
 		$uri
 			->expects($this->once())

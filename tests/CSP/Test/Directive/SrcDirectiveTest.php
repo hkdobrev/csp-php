@@ -40,7 +40,9 @@ class SrcDirectiveTest extends TestCase
 	 */
 	public function testRenderValue()
 	{
-		$sourceList = $this->getMock('CSP\Source\SourceList', array('render'));
+		$sourceList = $this->getMock('CSP\Source\SourceList', array(
+			'render',
+		));
 
 		$sourceList
 			->expects($this->once())

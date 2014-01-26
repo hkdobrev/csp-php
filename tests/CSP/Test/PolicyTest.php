@@ -71,7 +71,7 @@ class PolicyTest extends TestCase
 	{
 		$exampleReturnValue = 'ABCDE';
 		$directiveList = $this->getMock('CSP\Directive\DirectiveList', array(
-			'render'
+			'render',
 		));
 
 		$directiveList
