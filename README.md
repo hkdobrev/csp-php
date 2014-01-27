@@ -2,7 +2,7 @@
 
 #### Content-Security-Policy header generatator
 
-[![Build Status](https://travis-ci.org/hkdobrev/csp-php.png?branch=master)](https://travis-ci.org/hkdobrev/csp-php)
+[![Build Status](https://travis-ci.org/hkdobrev/csp-php.png?branch=master)](https://travis-ci.org/hkdobrev/csp-php) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/hkdobrev/csp-php/badges/quality-score.png?s=7acc9aabc91022ef4bbb4651d55bdf79e7a6ba80)](https://scrutinizer-ci.com/g/hkdobrev/csp-php/)
 
 ---
 
