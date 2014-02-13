@@ -11,7 +11,7 @@
 Content Security Policy is a specification developed by W3C and more specificially Web Application Security Working Group.
 
 Its goal is to make cross-site scripting (XSS), content injection and other attacks quite difficult.
-It considerably improve the security of web applications with limiting what the browser would load and execute.
+It considerably improves the security of web applications by limiting what the browser would load and execute.
 
 It is a mechanism which allows the server to send to the visitor's browser a set of strict rules to follow.
 
