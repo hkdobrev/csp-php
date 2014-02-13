@@ -44,6 +44,6 @@ And the different versions of the specification:
 - [CSP 1.1 (Working Draft)](www.w3.org/TR/CSP11)
 - [CSP 1.1 (Editor's Draft)](http://w3c.github.io/webappsec/specs/content-security-policy/csp-specification.dev.html)
 
+---
 
 [![Bitdeli Badge](https://d2weczhvl823v0.cloudfront.net/hkdobrev/csp-php/trend.png)](https://bitdeli.com/free "Bitdeli Badge")
-
