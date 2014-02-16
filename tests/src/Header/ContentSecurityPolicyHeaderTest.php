@@ -72,6 +72,38 @@ class ContentSecurityPolicyHeaderTest extends TestCase
     public function testGetName()
     {
         $header = new ContentSecurityPolicyHeader;
-        $this->assertSame(ContentSecurityPolicyHeader::NAME, $header->getName());
+        $this->assertSame(
+            ContentSecurityPolicyHeader::NAME,
+            $header->getName()
+        );
+    }
+
+    /**
+     * @covers CSP\Header\ContentSecurityPolicyHeader::render
+     */
+    public function testRender()
+    {
+        $header = $this->getMock(
+            'CSP\Header\ContentSecurityPolicyHeader',
+            array(
+                'getName',
+                'getValue'
+            )
+        );
+
+        $header
+            ->expects($this->once())
+            ->method('getName')
+            ->will($this->returnValue('ABCDE'));
+
+        $header
+            ->expects($this->once())
+            ->method('getValue')
+            ->will($this->returnValue(new Renderable('QWERTY')));
+
+        $this->assertSame(
+            'ABCDE: QWERTY',
+            $header->render()
+        );
     }
 }
