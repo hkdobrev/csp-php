@@ -2,6 +2,13 @@
     "name": "hkdobrev/csp",
     "description": "Content-Security-Policy header generator",
     "homepage": "https://github.com/hkdobrev/csp-php",
+    "keywords": [
+        "security",
+        "csp",
+        "content-security-policy",
+        "headers",
+        "http"
+    ],
     "license": "MIT",
     "authors": [
         {
