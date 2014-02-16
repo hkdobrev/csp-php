@@ -1,7 +1,10 @@
 <?php namespace CSP\Header;
 
-interface HeaderInterface
+use CSP\RenderableInterface;
+
+interface HeaderInterface extends RenderableInterface
 {
+	const DELIMITER = ': ';
 
     public function __construct($value = null);
 

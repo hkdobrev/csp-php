@@ -37,4 +37,11 @@ class ContentSecurityPolicyHeader implements HeaderInterface
 
         return $this;
     }
+
+    public function render()
+    {
+        return $this->getName()
+            .HeaderInterface::DELIMITER
+            .$this->getValue()->render();
+    }
 }
