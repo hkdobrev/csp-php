@@ -69,6 +69,9 @@ class ContentSecurityPolicyHeaderTest extends TestCase
         $header->setValue('ABCDE');
     }
 
+    /**
+     * @covers CSP\Header\ContentSecurityPolicyHeader::getName
+     */
     public function testGetName()
     {
         $header = new ContentSecurityPolicyHeader;
