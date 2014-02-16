@@ -10,7 +10,7 @@ php:
 before_install: composer selfupdate
 install: composer install
 before_script: mkdir -p build/coverage
-script: ./vendor/bin/phpunit --coverage-clover=build/coverage/clover.xml
+script: vendor/bin/phpunit --coverage-clover=build/coverage/clover.xml
 after_success:
   - composer require scrutinizer/ocular:~1.1.0
   - vendor/bin/ocular code-coverage:upload --format=php-clover build/coverage/clover.xml
