@@ -1,8 +1,6 @@
-### CSP for PHP
+### CSP for PHP &nbsp;&nbsp;[![Build Status](https://travis-ci.org/hkdobrev/csp-php.png?branch=master)](https://travis-ci.org/hkdobrev/csp-php) [![Code Coverage](https://scrutinizer-ci.com/g/hkdobrev/csp-php/badges/coverage.png?s=a2b79939fe8b190b563db35483da96fa83518300)](https://scrutinizer-ci.com/g/hkdobrev/csp-php/) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/hkdobrev/csp-php/badges/quality-score.png?s=7acc9aabc91022ef4bbb4651d55bdf79e7a6ba80)](https://scrutinizer-ci.com/g/hkdobrev/csp-php/)
 
 #### Content-Security-Policy header generatator
-
-[![Build Status](https://travis-ci.org/hkdobrev/csp-php.png?branch=master)](https://travis-ci.org/hkdobrev/csp-php) [![Scrutinizer Quality Score](https://scrutinizer-ci.com/g/hkdobrev/csp-php/badges/quality-score.png?s=7acc9aabc91022ef4bbb4651d55bdf79e7a6ba80)](https://scrutinizer-ci.com/g/hkdobrev/csp-php/)
 
 ---
 
