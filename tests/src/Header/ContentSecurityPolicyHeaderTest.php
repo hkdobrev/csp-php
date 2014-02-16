@@ -3,6 +3,7 @@
 use CSP\Test\TestCase;
 use CSP\Header\ContentSecurityPolicyHeader;
 use CSP\Policy;
+use CSP\Test\Util\Renderable;
 
 class ContentSecurityPolicyHeaderTest extends TestCase
 {

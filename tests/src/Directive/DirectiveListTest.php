@@ -2,7 +2,7 @@
 
 use CSP\Test\TestCase;
 use CSP\Directive\DirectiveList;
-use CSP\Test\Util\Render;
+use CSP\Test\Util\Renderable;
 
 class DirectiveListTest extends TestCase
 {
@@ -20,9 +20,9 @@ class DirectiveListTest extends TestCase
     public function testRenderWithSemiColonDelimiter()
     {
         $directiveList = new DirectiveList(array(
-            new Render('A'),
-            new Render('B'),
-            new Render('C'),
+            new Renderable('A'),
+            new Renderable('B'),
+            new Renderable('C'),
         ));
 
         $this->assertSame('A; B; C', $directiveList->render());

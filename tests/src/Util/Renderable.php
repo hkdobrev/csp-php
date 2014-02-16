@@ -2,7 +2,7 @@
 
 use CSP\RenderableInterface;
 
-class Render implements RenderableInterface
+class Renderable implements RenderableInterface
 {
     protected $value;
 

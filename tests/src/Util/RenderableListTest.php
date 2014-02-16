@@ -2,7 +2,7 @@
 
 use CSP\Test\TestCase;
 use CSP\Util\RenderableList;
-use CSP\Test\Util\Render;
+use CSP\Test\Util\Renderable;
 use CSP\Test\Util\RenderableListWithComma;
 
 class RenderableListTest extends TestCase
@@ -29,10 +29,10 @@ class RenderableListTest extends TestCase
     public function testRender()
     {
         $renderableList = new RenderableList(array(
-            new Render('A'),
-            new Render('B'),
-            new Render('C'),
-            new Render('D'),
+            new Renderable('A'),
+            new Renderable('B'),
+            new Renderable('C'),
+            new Renderable('D'),
         ));
         $this->assertEquals('A B C D', $renderableList->render());
     }
@@ -46,7 +46,7 @@ class RenderableListTest extends TestCase
         $this->assertEquals('', $renderableList->render());
 
         $renderableList = new RenderableList(array(
-            new Render(''),
+            new Renderable(''),
         ));
         $this->assertEquals('', $renderableList->render());
     }
@@ -57,10 +57,10 @@ class RenderableListTest extends TestCase
     public function testStaticItemDelimiterConstant()
     {
         $renderableList = new RenderableListWithComma(array(
-            new Render('A'),
-            new Render('B'),
-            new Render('C'),
-            new Render('D'),
+            new Renderable('A'),
+            new Renderable('B'),
+            new Renderable('C'),
+            new Renderable('D'),
         ));
         $this->assertInstanceOf('CSP\Util\RenderableList', $renderableList);
         $this->assertEquals('A,B,C,D', $renderableList->render());
