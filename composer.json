@@ -17,6 +17,11 @@
         }
     ],
     "minimum-stability": "stable",
+    "support": {
+        "source": "https://github.com/hkdobrev/csp-php",
+        "issues": "https://github.com/hkdobrev/csp-php/issues",
+        "wiki": "https://github.com/hkdobrev/csp-php/wiki"
+    },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
     },
