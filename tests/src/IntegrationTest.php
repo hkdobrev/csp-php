@@ -15,13 +15,13 @@ class IntegrationTest extends TestCase
 {
     public function testSimpleScriptDirective()
     {
-        $header = new ContentSecurityPolicyHeader(new Policy(
-            new DirectiveList(array(
+        $header = new ContentSecurityPolicyHeader(
+            new Policy(new DirectiveList(array(
                 new ScriptSrcDirective(new SourceList(array(
                     new KeywordSource(KeywordSource::KEYWORD_SELF)
                 )))
-            ))
-        ));
+            )))
+        );
 
         $this->assertSame(
             "Content-Security-Policy: script-src 'self'",
