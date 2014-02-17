@@ -5,7 +5,7 @@ use CSP\PolicyInterface;
 
 interface HeaderInterface extends RenderableInterface
 {
-	const DELIMITER = ': ';
+    const DELIMITER = ': ';
 
     public function __construct(PolicyInterface $value = null);
 
