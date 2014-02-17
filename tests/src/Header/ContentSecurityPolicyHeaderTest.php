@@ -62,8 +62,12 @@ class ContentSecurityPolicyHeaderTest extends TestCase
     public function testSetValueArgumentException()
     {
         $this->setExpectedException(
-            'InvalidArgumentException',
-            'ContentSecurityPolicyHeader value must be an instance of PolicyInterface'
+            'PHPUnit_Framework_Error',
+            sprintf(
+                'Argument 1 passed to %s must %s, string given',
+                'CSP\Header\ContentSecurityPolicyHeader::setValue()',
+                'implement interface CSP\PolicyInterface'
+            )
         );
         $header = new ContentSecurityPolicyHeader;
         $header->setValue('ABCDE');

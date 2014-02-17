@@ -8,7 +8,7 @@ class ContentSecurityPolicyHeader implements HeaderInterface
 
     protected $value;
 
-    public function __construct($value = null)
+    public function __construct(PolicyInterface $value = null)
     {
         if ($value) {
             $this->setValue($value);
@@ -25,14 +25,8 @@ class ContentSecurityPolicyHeader implements HeaderInterface
         return $this->value;
     }
 
-    public function setValue($value)
+    public function setValue(PolicyInterface $value)
     {
-        if (! $value instanceof PolicyInterface) {
-            throw new \InvalidArgumentException(
-                'ContentSecurityPolicyHeader value must be an instance of PolicyInterface'
-            );
-        }
-
         $this->value = $value;
 
         return $this;

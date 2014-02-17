@@ -1,12 +1,13 @@
 <?php namespace CSP\Header;
 
 use CSP\RenderableInterface;
+use CSP\PolicyInterface;
 
 interface HeaderInterface extends RenderableInterface
 {
 	const DELIMITER = ': ';
 
-    public function __construct($value = null);
+    public function __construct(PolicyInterface $value = null);
 
     /**
      * Get the name of the header (the part before the colon)
@@ -16,5 +17,5 @@ interface HeaderInterface extends RenderableInterface
 
     public function getValue();
 
-    public function setValue($value);
+    public function setValue(PolicyInterface $value);
 }
