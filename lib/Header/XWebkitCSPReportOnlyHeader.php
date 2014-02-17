@@ -1,6 +1,6 @@
 <?php namespace CSP\Header;
 
-class XWebkitCSPReportOnlyHeader extends ContentSecurityPolicyHeader
+class XWebkitCSPReportOnlyHeader extends ContentSecurityPolicyReportOnlyHeader
 {
     const NAME = 'X-Webkit-CSP-Report-Only';
 }
